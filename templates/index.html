@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evgeniy Muzalevsky</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}" type='text/css' />
+
+    <style type='text/css'>
+        #num {padding-left: 6px;}
+        .img-bot {margin-bottom: 6px; display: block;  }
+    </style>
+
+    <script type='text/javascript' src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script type='text/javascript' src="{{ url_for('static', filename='cookie.js') }}"></script>
+    <script type='text/javascript' src="{{ url_for('static', filename='expandingMenus.js') }}"></script>
+
+    <script type='text/javascript' src="{{ url_for('static', filename='jquery.cycle.all.js') }}"></script>
+    <script type='text/javascript'>
+        $(document).ready(function()
+        {
+
+            setTimeout('move_up()', 1);
+            expandingMenu(1);
+            expandingMenu(3);
+            expandingMenu(4);
+        });
+    </script>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+            $('#s1').cycle({
+                fx:'fade',
+                speed:'2000',
+                timeout: 6000,
+                next:'#next', prev:'#prev'});
+        });
+    </script>
+    <script type='text/javascript' src="{{ url_for('static', filename='full_background.js') }}"></script>
+</head>
+<div id="wrapper">
+	<div id="center">
+
+<body class='section-1'>
+<div id='the-background'><img src="{{ url_for('static', filename='1_background.png') }}" width='1920' height='1200' alt=''/></div>
+<div id="wrapper">
+
+
+<div id="header">
+	<div id="logo">
+		<a href="http://localhost">
+			<img src="{{ url_for('static', filename='logo.png') }}" border="0" />
+		</a>
+     </div>
+	<div id='menu'>
+		<div class='container'>
+
+		<ul>
+<li><a href='' onclick="do_click();">Меню1</a></li>
+</ul>
+
+<ul>
+<li class='section-title'>Меню2</li>
+<li><a href='' onclick="do_click();">A/W 2015</a></li>
+<li><a href='' onclick="do_click();">S/S 2015</a></li>
+<li><a href='' onclick="do_click();">A/W 2014</a></li>
+<li><a href='' onclick="do_click();">S/S 2014</a></li>
+<li><a href='' onclick="do_click();">A/W 2013</a></li>
+<li><a href='' onclick="do_click();">S/S 2013</a></li>
+<li><a href='' onclick="do_click();">A/W 2012</a></li>
+</ul>
+
+<ul>
+<li><a href='' onclick="do_click();">Меню3</a></li>
+</ul>
+
+<ul>
+<li class='section-title'>Меню4</li>
+<li><a href='' onclick="do_click();">Коллаборации</a></li>
+<li><a href='' onclick="do_click();">Пресса</a></li>
+<li><a href='' onclick="do_click();">Продажи</a></li>
+<li><a href='' onclick="do_click();">Студия</a></li>
+<li><a href='' onclick="do_click();">Работа</a></li>
+<li><a href='' onclick="do_click();">Рассылка</a></li>
+</ul>
+
+<ul>
+<li class='section-title'>Зашквары</li>
+<li><a href='' onclick="do_click();">Первый</a></li>
+<li><a href='' onclick="do_click();">Второй</a></li>
+</ul>
+
+
+<!-- you must provide a link to Indexhibit on your site someplace - thank you -->
+		<ul><li><a href="" target="_blank">Магазин</a></li></ul>
+		<ul><li><a href="" target="_blank">Блог</a></li></ul>
+		</div>
+    </div>
+</div>
+
+<div id='content'>
+<div class='container'>
+
+<!-- text and image -->
+    <div id='img-container'>
+        <p class='nav'><a id='prev' href='#'><</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id='next' href='#'>></a>
+
+            <div id='s1' class='pics' style='position:fixed; z-index:-1;'>
+                <div><img
+                        src="{{ url_for('static', filename='img.jpg') }}"
+                        class='img-bot'/>
+        <p class='thetitle'>Клевая картинка!!</p>
+
+        <p class='thecaption'>&nbsp;</p></div>
+    <div><img src="{{ url_for('static', filename='img2.jpg') }}" class='img-bot'/>
+
+        <p class='thetitle'>Еще одна супер картинка!</p>
+
+        <p class='thecaption'>&nbsp;</p></div>
+    <div><img src="{{ url_for('static', filename='img3.jpg') }}" class='img-bot'/>
+
+        <p class='thetitle'> Не менее охуенная картинка! </p>
+
+        <p class='thecaption'>&nbsp;</p></div>
+</div>
+</div>
+
+
+<!-- end text and image -->
+
+<div id='footer'>
+<p><a href="" ><img src="{{ url_for('static', filename='harold.jpg') }}" width="95" height="70"></a><br>
+<a href="" target="_blank"><img src="http://www.henrikvibskov.com/files/facebook.gif" width="20" height="20"></a>
+<a href="" target="_blank"><img src="http://www.henrikvibskov.com/files/youtube-trans.png" width="40" height="20"></a>
+<a href="" target="_blank"><img src="http://www.henrikvibskov.com/files/twitter.gif" width="20" height="20"></a>
+<a href="" target="_blank"><img src="http://www.henrikvibskov.com/files/PINTEREST-trans.png" width="20" height="20"></a>
+<a href="" target="_blank"><img src="http://www.henrikvibskov.com/files/instagram-trans.png" width="20" height="20"></a>
+</p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
